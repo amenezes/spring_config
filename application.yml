@@ -1,0 +1,7 @@
+health.config.enabled: false
+
+spring:
+  cloud:
+    consul:
+      host: discovery
+      port: 8500
