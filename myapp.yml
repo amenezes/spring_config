@@ -1,6 +1,0 @@
-info.app:
-  name: myapp
-  description: sample app
-
-server:
-  port: 5000
