@@ -1,0 +1,6 @@
+info.app:
+  name: simpleweb000
+  description: pws simpleweb000 - development profile
+
+server:
+  port: 8080
