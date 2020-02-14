@@ -1,0 +1,26 @@
+spring:
+  profiles: prod
+  sleuth:
+    sampler:
+      probability: 0.1
+
+configuration:
+  jwt:
+    base64-secret: ""
+    keystore: ${KEYSTORE:}
+    keystoreAlias: ${KEYSTORE_ALIAS:}
+    keystorePassword": ${KEYSTORE_PASSWORD:}
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: ${USER_INFO_URI:https://spendingbetter.com/auth/api/authenticatedUser}
+      jwt:
+        key-store: ${configuration.jwt.keystore:}
+        key-store-password: ${configuration.jwt.keystorePassword:}
+        key-alias: ${configuration.jwt.keystoreAlias:}
+    client:
+      accessTokenUri": ${ACCESS_TOKEN_URI:https://spendingbetter.com/auth/oauth/token}
+      userAuthorizationUri": ${AUTHORIZATION_URL:https://spendingbetter.com/auth/oauth/authorize}
+      clientId": ${OAUTH_CLIENT_ID:client}
+      clientSecret": ${OAUTH_CLIENT_SECRET:secret}
