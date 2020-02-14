@@ -6,7 +6,7 @@ spring:
 
 configuration:
   jwt:
-    base64-secret: ""
+    base64-secret: "base64_secret_test"
     keystore: ${KEYSTORE:keystore_test}
     keystoreAlias: ${KEYSTORE_ALIAS:keystore_alias_test}
     keystorePassword": ${KEYSTORE_PASSWORD:keystore_password_test}
