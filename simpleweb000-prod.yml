@@ -7,18 +7,18 @@ spring:
 configuration:
   jwt:
     base64-secret: ""
-    keystore: ${KEYSTORE:}
-    keystoreAlias: ${KEYSTORE_ALIAS:}
-    keystorePassword": ${KEYSTORE_PASSWORD:}
+    keystore: ${KEYSTORE:keystore_test}
+    keystoreAlias: ${KEYSTORE_ALIAS:keystore_alias_test}
+    keystorePassword": ${KEYSTORE_PASSWORD:keystore_password_test}
 
 security:
   oauth2:
     resource:
       user-info-uri: ${USER_INFO_URI:https://spendingbetter.com/auth/api/authenticatedUser}
       jwt:
-        key-store: ${configuration.jwt.keystore:}
-        key-store-password: ${configuration.jwt.keystorePassword:}
-        key-alias: ${configuration.jwt.keystoreAlias:}
+        key-store: ${configuration.jwt.keystore:jwt_keystore_test}
+        key-store-password: ${configuration.jwt.keystorePassword:jwt_keystorePassword_test}
+        key-alias: ${configuration.jwt.keystoreAlias:jwt_keystoreAlias_test}
     client:
       accessTokenUri": ${ACCESS_TOKEN_URI:https://spendingbetter.com/auth/oauth/token}
       userAuthorizationUri": ${AUTHORIZATION_URL:https://spendingbetter.com/auth/oauth/authorize}
