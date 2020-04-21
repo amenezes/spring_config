@@ -4,3 +4,8 @@ info.app:
 
 server:
   port: 8080
+
+python:
+  cache:
+    type: simple
+    timeout: 10
