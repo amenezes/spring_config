@@ -1,6 +1,7 @@
 info.app:
   name: simpleweb000
   description: pws simpleweb000
+  password: '{cipher}93716310174c2ddb5991912af65d3d191e9003b3b9a4fca2f056e061e1b428cd'
 
 server:
   port: 8080
