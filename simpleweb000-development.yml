@@ -13,3 +13,16 @@ python:
 example:
   - 1
   - 2
+
+examples:
+  int:
+    - 1
+    - 2
+  str:
+    - "example 1"
+    - "example 2"
+    - "example 3"
+  float:
+    - 1.1
+    - 2.2
+    - 3.3
