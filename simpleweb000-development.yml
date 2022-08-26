@@ -9,3 +9,7 @@ python:
   cache:
     type: simple
     timeout: 10
+
+example:
+  - 1
+  - 2
