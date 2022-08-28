@@ -27,3 +27,13 @@ examples:
     - 2.2
     - 3.3
     - 4.4
+
+first:
+  second:
+    third_1:
+      - 1
+      - 2
+    third_2:
+      - 1
+      - 2
+      - 3
