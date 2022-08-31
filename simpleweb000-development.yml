@@ -39,19 +39,19 @@ first:
       - 1
       - 2
     third_2: 
-      - 1
-      - 2
-      - 3
+      - 1.1
+      - 2.2
+      - 3.3
     third_3: 
       fourth_1: 
-        - 1
-        - 2
+        - "1"
+        - "2"
       fourth_2: 
         - 1
       fourth_3: 
         - 1
-        - 2
-        - 3
+        - 2.2
+        - "three"
       fourth_4: 
         fifth_1: 
           - 1
