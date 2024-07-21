@@ -60,3 +60,9 @@ first:
           - 1
           - 2
           - 3
+
+main_list:
+  - child_list_one:
+      - pp-name: example0
+  - child_list_two:
+      - pp:name: example1
