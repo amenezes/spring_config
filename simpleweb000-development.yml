@@ -61,8 +61,18 @@ first:
           - 2
           - 3
 
-main_list:
-  - child_list:
-      - pp-name: example0
-  - child_list:
-      - pp:name: example1
+environments:
+- type: dev
+  properties:
+    - name: property1
+      schema:
+        type: string
+        minLength: 1
+    - name: property2
+      schema:
+        type: string
+- type: stage
+  properties:
+    - name: property1
+      schema:
+        type: string
